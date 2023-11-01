@@ -1,0 +1,248 @@
+<!DOCTYPE html> 
+<head>
+	<style>
+		.navbar {
+  list-style-type: none;
+  margin: 20;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6fb9eb;
+}
+
+/* Style the navigation items */
+.navbar li {
+	width: 180px;
+  float: left;
+}
+
+/* Style the links within the navigation */
+.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Change the background color of links on hover */
+.navbar a:hover {
+  background-color: #306bb3;
+  color: rgb(255, 255, 255);
+}
+
+/* Style the dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Show the dropdown menu on hover */
+.navbar li:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the items within the dropdown menu */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change the background color of dropdown items on hover */
+.dropdown-content a:hover {
+  background-color: #30a0c9;
+}
+    .container {
+            display: flex;
+        }
+
+.box {
+	width: 200px; /* Set the width to your desired value */
+    height: 300px;
+	flex: 1;
+	border: 1px solid #d3c4c4;
+	background-color: #cdd9f0;
+}
+
+.center-line {
+            text-align: center;
+        }
+		@keyframes fadeIn {
+			  0% {opacity: 0;}
+			  100% {opacity: 1;}
+			}
+			
+			.logo {
+			  animation: fadeIn 2s;
+			  transition: opacity 0.35s
+			}
+			.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+			}
+			.logo:hover {
+  opacity: 0.5; /* Adjust the opacity value as desired */
+}
+
+		
+</style>
+</head>
+<body id="page1">
+<!-- header -->
+	<header>
+		<ul class="navbar">
+			<li><a href="web.html">Home</a></li>
+  <li class="dropdown">
+    <a href="Forum.html">Forums ▼</a>
+    <div class="dropdown-content">
+      <a href="Forum1.html">Forum 1</a>
+      <a href="Forum2.html">Forum 2</a>
+      <a href="Forum3.html">Forum 3</a>
+    </div>
+  </li>
+  <li class="dropdown">
+	<a href="news.html">News ▼</a>
+	<div class="dropdown-content">
+		<a href="Forum1.html">Recent News</a>
+		<a href="Forum2.html">News Archive</a>
+	  </div>
+	</li>
+  <li><a href="Contacts.html">Contacts</a></li>
+  <li><a href="about.html"><span>A</span>bout</a></li>
+		</ul>
+
+
+<div class="container">
+	<a><img class="logo" src="C:\Users\xianh\Desktop\logo.png" ></a> <!-- This is the logo -->
+</div>
+		
+</header>
+
+
+
+<!-- /header -->
+<!-- content -->
+	<section id="content">
+			<div class="container">
+			<div class="box">
+				<div class="center-line">
+				<h2>About Us</h2>
+				<strong><a href="about.html">We</a></strong> are a group of college students with specialties in the field of Health sciences, Chemistry, Math, Computer Science, and the Liberal Arts. </p>
+				<p>Click <a href="education.html">here</a> to meet the founders.</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="center-line">
+				<h2>Our goal</h2>
+				<p>To creat a community for the exchange of knowledge in the health sciences.</p>
+				</div>
+
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="container">
+        </div>
+			<article class="col1">
+				<br>
+				<h2><span>Our Solutions</span></h2>
+				<div class="pad_left1">
+					<div class="pad_left1">
+						<div class="wrapper pad_top1">
+							<div class="col3">
+								<div class="wrapper">
+									<figure class="left marg_right1"><img src="images/page1_img3.png" alt=""></figure>
+									<p class="cols"><strong class="font1"> <a href="Scicomm.html"><img src="images/icon1.jpg" alt="">Scientific communications</a></strong><br>
+										Lorem ipsum dolor</p>
+								</div>
+							</div>
+							<div class="col3 pad_left2">
+								<div class="wrapper">
+									<figure class="left marg_right1"><img src="images/page1_img5.png" alt=""></figure>
+									<p class="cols"><strong class="font1"><a href="BB.html">Breaking boundaries</a></strong><br>
+										Lorem ipsum dolor</p>
+								</div>
+							</div>
+						</div>
+						<div class="wrapper">
+							<div class="col3">
+								<div class="wrapper">
+									<figure class="left marg_right1"><img src="images/page1_img4.png" alt=""></figure>
+									<div class="cols"><strong class="font1"><a href="Reem.html">Recruits and employment</a></strong><br>
+										Lorem ipsum dolor</div>
+								</div>
+							</div>
+							<div class="col3 pad_left2">
+								<div class="wrapper">
+									<figure class="left marg_right1"><img src="images/page1_img6.png" alt=""></figure>
+									<div class="cols"><strong class="font1"><a href="Drug.html">Drug trials</a></strong><br>Lorem ipsum dolor</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+    		</article>
+			<article class="col2">
+				<h3>Latest activities</h3>
+				<div class="activity">
+					<p>Where knowledge flow and connect</p>
+    		</article>
+		</div>
+	</section>
+<!-- / content -->
+<!-- footer -->
+	<footer>
+		<div>	
+			<h5>Follow Us</h5>
+				<ul class="navbar">
+					<li><a href="https://facebook.com"><img src="C:\Users\xianh\Desktop\Java\Healthscientia\facebook.png" alt="" width="20"></a></li>
+					<li><a href="https://twitter.com"><img src="C:\Users\xianh\Desktop\Java\Healthscientia\X.png" alt="" width="20"></a></li>
+					<li><a href="wechat.html"><img src="C:\Users\xianh\Desktop\Java\Healthscientia\wechat.png" alt="" width="20"></a></li>
+					<li><a href="https://instagram.com"><img src="C:\Users\xianh\Desktop\Java\Healthscientia\Instagram.png" alt="" width="20"></a></li>
+				</ul>
+			<article id="newsletter">
+				<h5>Newsletter</h5>
+				<form id="newsletter_form">
+					<div class="wrapper">
+						<input class="input" type="text" value="Enter your email here" onblur="if(this.value=='') this.value='Enter your email here'" onFocus="if(this.value =='Enter your email here' ) this.value=''" >
+					</div>
+					<a href="#" onClick="document.getElementById('newsletter_form').submit()">Subscribe</a>
+				</form>
+			</article>
+		</div>
+	</footer>
+<!-- / footer -->
+</div>
+<script type="text/javascript">Cufon.now();</script>
+<script type="text/javascript">
+	$(window).load(function() {
+	$('#nivo_slider').nivoSlider({
+		effect:'fold', //Specify sets like: 'fold,fade,sliceDown, sliceDownLeft, sliceUp, sliceUpLeft, sliceUpDown, sliceUpDownLeft'
+		slices:7,
+		animSpeed:500,
+		pauseTime:6000,
+		startSlide:0, //Set starting Slide (0 index)
+		directionNav:true, //Next & Prev
+		directionNavHide:false, //Only show on hover
+		controlNav:true, //1,2,3...
+		controlNavThumbs:false, //Use thumbnails for Control Nav
+		controlNavThumbsFromRel:false, //Use image rel for thumbs
+		controlNavThumbsSearch: '.jpg', //Replace this with...
+		controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
+		keyboardNav:true, //Use left & right arrows
+		pauseOnHover:true, //Stop animation while hovering
+		manualAdvance:false, //Force manual transitions
+		captionOpacity:1, //Universal caption opacity
+		beforeChange:function(){},
+		afterChange:function(){},
+		slideshowEnd:function(){} //Triggers after all slides have been shown
+	});
+});
+</script>
+</body>
+</html>

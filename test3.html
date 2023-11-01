@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Stored User Responses</title>
+</head>
+<body>
+    <h1>Stored User Responses</h1>
+    <div id="display_responses"></div>
+
+    <script>
+        // Retrieve the stored user response from the local storage
+        var storedResponse = localStorage.getItem('user_response');
+
+        // Display the stored response on the webpage
+        if (storedResponse) {
+            document.getElementById('display_responses').innerHTML = "<p>" + storedResponse + "</p>";
+        } else {
+            document.getElementById('display_responses').innerHTML = "<p>No responses found.</p>";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* CSS for the menu */
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #0c6f9d;
+            }
+          
+            li {
+              float: left;
+            }
+            li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px 50px;
+        text-decoration: none;
+      }
+      li a:hover {
+        background-color: #8ce3e6;
+      }
+    
+    </style>
+    <header>
+		<div class="wrapper">
+			<nav>
+				<ul id="menu">
+					<li><a href="web.html"><span>H</span>ome</a></li>
+					<li id="menu_active"><a href="about.html"><span>A</span>bout</a></li>
+					<li><a href="Services.html"><span>S</span>ervices</a></li>
+					<li><a href="Forum.html"><span>F</span>orum</a></li>
+					<li><a href="Contacts.html"><span>C</span>ontacts</a></li>
+				</ul>
+			</nav>
+		</div>
+    <title>Education</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+    <h2>Health Sciences frontiers</h2>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #new-post {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #1a7aa6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(100,200,150);
+        }
+
+        #posts {
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        .post {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .post h3 {
+            color: #4CAF50;
+        }
+
+        .comment {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Online Forum</h1>
+    <form onsubmit="saveResponse()">
+        <label for="user_response">Post your response:</label><br>
+        <textarea id="user_response" name="user_response" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Post">
+    </form>
+
+    <script>
+        function saveResponse() {
+            var response = document.getElementById('user_response').value;
+            if (response) {
+                localStorage.setItem('user_response', response);
+                alert('Your response has been saved!');
+            } else {
+                alert('Please enter a valid response.');
+            }
+        }
+    </script>
+</body>
+
+
